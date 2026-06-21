@@ -2459,7 +2459,7 @@ function buildEmojiGrid() {
   const won = guesses.length > 0 && guesses[guesses.length - 1] === TARGET;
   const today = new Date();
   const dateStr = today.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
-  lines.push(`KIERSTEN Wordle — ${dateStr}`);
+  lines.push(`KIERSTEN — ${dateStr}`);
   lines.push(won ? `${guesses.length}/6` : 'X/6');
   lines.push('');
   for (const guess of guesses) {
